@@ -1,0 +1,155 @@
+.App {
+  background: linear-gradient(to bottom right, #546591 0%, #c0aae8 100%);
+  min-height: 100vh;
+  padding-top: 5%;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 671px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.user-form {
+  height: 6rem;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 3px;
+
+  border-radius: 5px;
+}
+
+.user-form span {
+  position: absolute;
+  top: 50%;
+  left: 72%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.user-form input {
+  border: none;
+  outline: none;
+  width: 80%;
+  height: 90%;
+
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+
+  border-radius: inherit;
+}
+.user-form button {
+  width: 20%;
+  height: 90%;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.pallette {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  position: absolute;
+  width: 442px;
+  background-color: white;
+  height: 96px;
+  top: 100%;
+  left: 40%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 18px;
+  z-index: 999;
+}
+
+.pallette span {
+  position: absolute;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  left: 50%;
+  top: -11%;
+}
+
+.pallette div {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tasks-list {
+  margin-top: 3rem;
+}
+
+.task-content {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 0.75rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  color: white;
+  position: relative;
+}
+.task-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80%;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.edit {
+  cursor: pointer;
+  margin-right: 1.2rem;
+}
+
+.edit-input {
+  width: 80%;
+  height: 90%;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.update-btn {
+  height: 3rem;
+  width: 5.5rem;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.edit-pallete {
+  display: flex;
+  margin-right: 1rem;
+  align-self: center;
+  cursor: pointer;
+}
+
+.edt {
+  transform: translateX(8%);
+}
