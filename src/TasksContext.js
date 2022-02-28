@@ -66,7 +66,7 @@ export default function tasksReducer(tasks, action) {
 }
 
 const initialTasks = [
-  { id: 0, text: "Philosopher’s Path", done: true, color: "yellow" },
-  { id: 1, text: "Visit the temple", done: false, color: "red" },
-  { id: 2, text: "Drink matcha", done: false, color: "blue" },
+  { id: 0, text: "Philosopher’s Path", done: true, color: "coral" },
+  { id: 1, text: "Visit the temple", done: false, color: "lightblue" },
+  { id: 2, text: "Drink matcha", done: false, color: "pink" },
 ];

@@ -27,7 +27,7 @@
   width: 26%;
   background-color: #ffffff;
   margin: 0 auto;
-  padding: 15px 19px 15px;
+  padding: 15px 19px 19px;
 
   border-radius: 15px;
 }
@@ -143,11 +143,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1.5rem;
-  padding-right: 0.75rem;
-  font-size: 1.5rem;
+  padding-left: 14px;
+  padding-right: 4px;
   border-radius: 5px;
-  margin-top: 1rem;
+  margin-top: 10px;
   color: white;
   position: relative;
 }
@@ -168,21 +167,31 @@
 
 .delete {
   cursor: pointer;
+  margin-right: 9px;
 }
 
 .edit {
   cursor: pointer;
-  margin-right: 1.2rem;
+  margin-right: 12px;
 }
 
 .edit-input {
   width: 80%;
   height: 90%;
-  font-size: 1.5rem;
-  background: transparent;
   border: none;
   outline: none;
-  color: white;
+
+  padding: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #ffffff;
+  background: transparent;
 }
 
 .update-btn {
@@ -204,7 +213,7 @@
 }
 
 .edt {
-  transform: translateX(3.2%);
+  transform: translateX(5.6%);
 }
 
 .ticked {
