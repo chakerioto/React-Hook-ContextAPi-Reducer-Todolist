@@ -1,93 +1,137 @@
+.header {
+  display: flex;
+  padding: 0 3rem;
+  height: 4.375rem;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+
 .App {
-  background: linear-gradient(to bottom right, #546591 0%, #c0aae8 100%);
+  background: linear-gradient(to right, #4cb8fd 0%, #dfbde9 100%);
   min-height: 100vh;
-  padding-top: 5%;
-  box-sizing: border-box;
+  padding-top: 122px;
 }
 
 .content {
-  width: 671px;
-  background-color: white;
+  width: 26%;
+  background-color: #ffffff;
   margin: 0 auto;
-  padding: 2rem;
-  border-radius: 20px;
+  padding: 15px 19px 15px;
+
+  border-radius: 15px;
 }
 
 .content h1 {
   text-align: center;
+  margin: 0;
 }
 
 .user-form {
-  height: 6rem;
+  height: 60px;
+
+  margin-top: 31px;
 
   display: flex;
   align-items: center;
   position: relative;
-  padding-left: 3px;
 
   border-radius: 5px;
+
+  box-shadow: 0px 3px 8px rgba(54, 54, 54, 0.25);
 }
 
 .user-form span {
   position: absolute;
   top: 50%;
-  left: 72%;
+  left: 78%;
   transform: translateY(-50%);
   cursor: pointer;
 }
 .user-form input {
   border: none;
   outline: none;
-  width: 80%;
-  height: 90%;
+  width: calc((350 / 415 -4) * 100%);
+  height: 56px;
 
-  padding-left: 1.5rem;
-  font-size: 1.5rem;
+  padding-left: 11px;
+
+  color: rgba(206, 206, 206, 0.76);
 
   border-radius: inherit;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
 }
 .user-form button {
-  width: 20%;
+  width: 15%;
   height: 90%;
   background: transparent;
-  border: none;
-  font-size: 1.5rem;
-  color: white;
   cursor: pointer;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+
+  border: none;
+
+  color: #ffffff;
 }
 
 .pallette {
   display: flex;
-  justify-content: space-around;
-  padding: 1rem;
+  justify-content: space-evenly;
+  gap: 0.75rem;
+
   position: absolute;
-  width: 442px;
-  background-color: white;
-  height: 96px;
-  top: 100%;
-  left: 40%;
-  border-radius: 20px;
-  box-sizing: border-box;
+  top: 80%;
+  left: 42.75%;
+
+  min-height: 60px;
+
+  width: 274px;
+  padding: 0.625rem;
+
+  border-radius: 7px;
   flex-wrap: wrap;
-  gap: 18px;
   z-index: 999;
+  background-color: white;
 }
 
 .pallette span {
   position: absolute;
   background-color: white;
-  width: 20px;
-  height: 20px;
+  width: 0.7rem;
+  height: 0.75rem;
   transform: rotate(45deg);
   left: 50%;
-  top: -11%;
+  top: -5%;
 }
 
 .pallette div {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 14.66px;
+  height: 14.66px;
   border-radius: 50%;
   cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tasks-list {
@@ -95,7 +139,7 @@
 }
 
 .task-content {
-  height: 80px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,6 +155,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 80%;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #ffffff;
 }
 
 .delete {
@@ -151,5 +204,9 @@
 }
 
 .edt {
-  transform: translateX(8%);
+  transform: translateX(3.2%);
+}
+
+.ticked {
+  position: absolute;
 }

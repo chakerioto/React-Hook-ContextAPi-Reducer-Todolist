@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { AiOutlineBgColors } from "react-icons/ai";
 import { useTasksDispatch } from "../../TasksContext";
 import { useColor, useColorDispatch } from "../../ColorsContext";
+
+import pallete from "../../assests/pallete.png";
 
 import Palette from "../Palette/Palette";
 
@@ -30,9 +31,12 @@ const FormInput = () => {
   };
 
   return (
-    <form className="user-form" style={{ backgroundColor: currentBg }}>
+    <form
+      className="user-form"
+      style={{ backgroundColor: currentBg, border: `2px solid ${currentBg}` }}
+    >
       <span onClick={() => setIsSelectColor(!isSelectColor)}>
-        <AiOutlineBgColors size="32px" color="grey" />
+        <img src={pallete} alt="" />
       </span>
       <input
         type="text"

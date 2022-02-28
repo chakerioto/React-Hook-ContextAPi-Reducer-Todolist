@@ -42,7 +42,7 @@ const colorReducer = (state, actions) => {
 };
 
 export const totalColor = [
-  { id: 0, color: "#2d3247" },
+  { id: 0, color: "#00A3FF" },
   { id: 1, color: "#CC3E34" },
   { id: 2, color: "#E55E2C" },
   { id: 3, color: "#EE9134" },

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { TiTickOutline } from "react-icons/ti";
 import { useColor } from "../../ColorsContext";
 import { useTasks } from "../../TasksContext";
+import { ReactComponent as TickedLogo } from "../../assests/ticked.svg";
 
 const Palette = ({ dispatchColor, dispatch, task, edt }) => {
   const [currentClickingId, setCurrentClickingId] = useState(0);
@@ -34,9 +35,7 @@ const Palette = ({ dispatchColor, dispatch, task, edt }) => {
             style={{ backgroundColor: `${color.color}` }}
             onClick={() => setCurrentClickingId(color.id)}
           >
-            {currentClickingId === color.id && (
-              <TiTickOutline color="white" size={24} />
-            )}
+            {currentClickingId === color.id && <TickedLogo />}
           </div>
         );
       })}

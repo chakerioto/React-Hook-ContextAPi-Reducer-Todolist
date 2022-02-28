@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useTasksDispatch } from "../../TasksContext";
-import { FiEdit, FiX } from "react-icons/fi";
 import { AiOutlineBgColors } from "react-icons/ai";
 import Palette from "../Palette/Palette";
 import { useColorDispatch, useColor } from "../../ColorsContext";
+
+import { ReactComponent as EditLogo } from "../../assests/edit.svg";
+import { ReactComponent as DeleteLogo } from "../../assests/delete.svg";
+import { ReactComponent as EditTask } from "../../assests/editTask.svg";
 
 const Task = ({ task }) => {
   useEffect(() => {}, [task]);
@@ -45,7 +48,7 @@ const Task = ({ task }) => {
           className="edit-pallete"
           onClick={() => setIsOpenPalette(!isOpenPallette)}
         >
-          <AiOutlineBgColors size="40px" color="white" />
+          <EditTask />
         </span>
 
         <button
@@ -75,7 +78,7 @@ const Task = ({ task }) => {
         <span className="icontask">
           <span className="edit" onClick={() => setIsEditing(true)}>
             {" "}
-            <FiEdit size="30px" />
+            <EditLogo />
           </span>
           <span
             className="delete"
@@ -86,7 +89,7 @@ const Task = ({ task }) => {
               })
             }
           >
-            <FiX size="30px" />
+            <DeleteLogo />
           </span>
         </span>
       </div>
